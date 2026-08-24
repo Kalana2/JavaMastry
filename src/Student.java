@@ -1,43 +1,33 @@
-public class Student {
+public class Student extends User {
 
-    private String name;
-    private int age;
-    private String university;
+    private final String degree;
 
-    public Student(String name, int age, String university) {
-        this.name = name;
-        setAge(age);
-        this.university = university;
-    }
+    public Student(
+            String id,
+            String name,
+            String degree
+    ) {
+        super(id, name);
 
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public String getUniversity() {
-        return university;
-    }
-
-    public void setAge(int age) {
-        if (age > 0 && age < 120) {
-            this.age = age;
-        } else {
-            System.out.println("Invalid age.");
+        if (degree == null || degree.isBlank()) {
+            throw new IllegalArgumentException(
+                    "Degree cannot be empty"
+            );
         }
+
+        this.degree = degree;
     }
 
-    public void setUniversity(String university) {
-        if (university != null && !university.isBlank()) {
-            this.university = university;
-        }
+    public String getDegree() {
+        return degree;
     }
 
-    public void introduce() {
-        System.out.println(name + " is " + age + " years old.");
-        System.out.println("University: " + university);
+    @Override
+    public String getRole() {
+        return "Student";
+    }
+
+    public String getStudentSummary() {
+        return super.getSummary() + " - " + degree;
     }
 }
