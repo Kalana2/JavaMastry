@@ -1,21 +1,17 @@
 public class Main {
 
     public static void main(String[] args) {
-        Student student1 = new Student(
+        Student student = new Student(
                 "Kalana",
                 22,
-                "University of Colombo School of Computing"
+                "UCSC"
         );
 
-        student1.introduce();
-        System.out.println(student1.getStudyStatus());
+        System.out.println(student.getName());
 
-        Student student2 = new Student(
-                "Seniru",
-                22,
-                "University of Colombo School of Computing"
-        );
+        student.setAge(23);
+        System.out.println("New age: " + student.getAge());
 
-        student2.introduce();
+        student.setAge(-5); // Invalid age
     }
 }
