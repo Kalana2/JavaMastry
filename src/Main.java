@@ -15,5 +15,10 @@ public class Main {
 
         System.out.println(student.getSummary());
         System.out.println(instructor.getSummary());
+
+        Course course = new Course("CSC3203", "Literature Review", instructor);
+
+        String courseDetails = course.getDetails();
+        System.out.println(courseDetails);
     }
 }
