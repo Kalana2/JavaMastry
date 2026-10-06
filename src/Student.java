@@ -1,6 +1,7 @@
 public class Student extends User {
 
     private final String degree;
+    private static int studentCount = 0;
 
     public Student(
             String id,
@@ -16,6 +17,7 @@ public class Student extends User {
         }
 
         this.degree = degree;
+        studentCount++;
     }
 
     public String getDegree() {
