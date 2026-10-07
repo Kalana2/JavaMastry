@@ -1,3 +1,5 @@
+package com.model;
+
 public class Student extends User {
 
     private final String degree;
@@ -26,7 +28,7 @@ public class Student extends User {
 
     @Override
     public String getRole() {
-        return "Student";
+        return "com.model.Student";
     }
 
     public String getStudentSummary() {

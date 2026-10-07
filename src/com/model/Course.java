@@ -1,3 +1,5 @@
+package com.model;
+
 public class Course {
     private final String courseCode;
     private final String courseName;
@@ -23,7 +25,7 @@ public class Course {
     }
 
     public void enrollStudent() {
-        if  (enrolledStudentCount > maxEnrolledStudentCount) throw  new IllegalArgumentException("Course is already filled");
+        if  (enrolledStudentCount > maxEnrolledStudentCount) throw  new IllegalArgumentException("com.model.Course is already filled");
         this.enrolledStudentCount++;
 
     }

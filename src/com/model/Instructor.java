@@ -1,3 +1,5 @@
+package com.model;
+
 public class Instructor extends User {
 
     private final String department;
@@ -17,6 +19,6 @@ public class Instructor extends User {
 
     @Override
     public String getRole() {
-        return "Instructor";
+        return "com.model.Instructor";
     }
 }

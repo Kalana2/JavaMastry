@@ -1,3 +1,5 @@
+package com.model;
+
 public class User {
 
     private final String id;
@@ -29,7 +31,7 @@ public class User {
     }
 
     public String getRole() {
-        return "User";
+        return "com.model.User";
     }
 
     public String getSummary() {

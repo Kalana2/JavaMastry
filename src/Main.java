@@ -1,3 +1,9 @@
+import com.model.Course;
+import com.model.Instructor;
+import com.model.Student;
+import com.exception.CourseFullException;
+import com.service.Enrollment;
+
 public class Main {
 
     public static void main(String[] args) {
