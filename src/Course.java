@@ -25,11 +25,17 @@ public class Course {
     public void enrollStudent() {
         if  (enrolledStudentCount > maxEnrolledStudentCount) throw  new IllegalArgumentException("Course is already filled");
         this.enrolledStudentCount++;
-        e
+
     }
     public boolean isFull() {
         return enrolledStudentCount >= maxEnrolledStudentCount;
     }
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+
+
 
 
 

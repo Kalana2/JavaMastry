@@ -20,5 +20,14 @@ public class Main {
 
         String courseDetails = course.getDetails();
         System.out.println(courseDetails);
+
+
+
+        try {
+            Enrollment enrollment = new Enrollment(student,course);
+            System.out.println("successfully enrolled");
+        }catch (CourseFullException exception) {
+            System.out.println("course is full enrollment rejected" + exception.getMessage());
+        }
     }
 }
