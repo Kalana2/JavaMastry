@@ -9,6 +9,7 @@ public class Main {
 
 
         System.out.println(s1.toString());
+        System.out.println(s1);
 
         System.out.println(s1.equals(s2));
         System.out.println(s1.equals(s3));
