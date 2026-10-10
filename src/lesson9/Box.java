@@ -1,5 +1,11 @@
 package lesson9;
 
+import com.sun.jdi.Value;
+
+import javax.swing.text.Element;
+import javax.xml.transform.Result;
+import java.security.Key;
+
 public class Box <T>{
     private  T value;
 
@@ -11,3 +17,11 @@ public class Box <T>{
         return value;
     }
 }
+
+// Common type - parameter names
+//T -> Type
+//E -> Element
+//K -> Key
+//V -> Value
+//R -> Result
+//ID -> Idenfier
