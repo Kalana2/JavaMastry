@@ -1,5 +1,7 @@
 package lesson9;
 
+import com.model.User;
+
 import java.util.List;
 
 public class GenericMethod {
@@ -7,5 +9,10 @@ public class GenericMethod {
         for (T item : items) {
             System.out.println(item);
         }
+    }
+
+    public static  <T extends User> void printUsers(T user){ // User or thire own chlid class
+        System.out.println(user.getSummary());
+
     }
 }
