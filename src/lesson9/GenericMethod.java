@@ -15,4 +15,8 @@ public class GenericMethod {
         System.out.println(user.getSummary());
 
     }
+
+    public static void displaySize(List<?> Items) {
+        System.out.println(Items.size());
+    }
 }
