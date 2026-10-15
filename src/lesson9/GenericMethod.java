@@ -21,6 +21,6 @@ public class GenericMethod {
     }
 
     public static void displaySize(List<?> Items) {
-        System.out.println(Items.size());
+        System.out.println(Items);
     }
 }
